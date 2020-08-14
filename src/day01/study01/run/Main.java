@@ -21,8 +21,9 @@ public class Main {
 		new TestVariable2().method3(); 
 		new TestVariable2().method4(); 
 		
-		new InputVariable().inputMethod2(); */
-		new InputVariable().myInputMethod();
+		new InputVariable().inputMethod2(); 
+		new InputVariable().myInputMethod(); */
+		new CastingTest().castMethod2();
 	}
 
 }

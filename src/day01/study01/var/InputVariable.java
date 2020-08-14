@@ -71,7 +71,7 @@ public class InputVariable {
 		//변수명
 		// 책 이름 : bk_Name (String)
 		// 가격 : bk_Prc (int)
-		// 1년 동안 팔린 평균 권수 : bk_Sell(int)
+		// 1년 동안 팔린 권수 : bk_Sell(int)
 		// 1달 동안 팔린 평균권수 : bk_avg(double)
 		// 재고현황 : bk_Stock (boolean)
 
