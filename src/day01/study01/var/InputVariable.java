@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class InputVariable {
 	// 기능 제공용 클래스
-
+	
 	//java 1.5 이전버젼 코드
 	public void inputMethod() {
 		
@@ -77,6 +77,11 @@ public class InputVariable {
 
 		
 		Scanner sc = new Scanner(System.in);
+//		java.util.Scanner sc = new java.util.Scanner(System.in);
+//		풀패키지(풀 클래스명) : 사용하려는 자바 클래스 파일의 이름을 
+//		해당클래스가 속한 모든 패키지명을 기술하여 선언하는 것을 말한다.
+//		만약, 사용하려는 클래스가 여러개 있고, 
+//		그 클래스들의 이름이 같다면 이렇게 풀 패키지명으로 선언하여 사용해야 한다.
 		
 		String bk_Name;
 		int bk_Prc;

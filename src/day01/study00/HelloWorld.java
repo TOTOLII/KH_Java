@@ -1,4 +1,4 @@
-package com.kh.hello;
+package day01.study00;
 
 // 한줄 주석 처리
 /* 여러 줄 주석처리 */
