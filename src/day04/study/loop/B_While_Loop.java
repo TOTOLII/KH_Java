@@ -105,10 +105,38 @@ public class B_While_Loop {
 			i++;
 		}
 		
+	}
+	public void testWhileLoop6() {
+		//while과 for 반복문은 서로 바꿀 수 있다!
+		//1~5까지의 합
 		
+		int sum = 0;
+//		for (int i = 1; i < 6; i++) {
+//			sum += i;
+//		}
+		
+		//1. 초기값을 밖에 선언한다.
+		int i = 1;
+		
+		//2. 조건식을 사용하여 while 반복문을 만든다.
+		while (i < 6) {
+			sum +=i;
+			i++;
+		}
+		//while -->for
+//		while(true) {
+//			sum+= i;
+//		}
+		
+		//for문을 이용하여 while(true)문 처럼 무한반복 시키기
+//		for(;;) {
+//			sum += i;
+//		}
 	}
 	
-	public void testWhileLoop6() {
+	
+	
+	public void testWhileLoop7() {
 //		삼각형 모양으로 별 찍기
 		System.out.print("만들려는 삼각형의 높이를 입력 하세요. : ");
 		int coL = sc.nextInt();
@@ -120,6 +148,7 @@ public class B_While_Loop {
 		}
 		
 	}
+	
 	
 	
 }
