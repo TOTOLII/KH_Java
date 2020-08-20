@@ -14,10 +14,21 @@ public class C_DoWhileLoop {
 		System.out.println("정수 입력 : ");
 		int num = sc.nextInt();
 		
-		while (num < 5) {
-			System.out.println("Hello World");
+//		while (num < 5) {
+//			System.out.println("Hello World");
+//			num++;
+//		}
+		// while의 경우 조건을 먼저 비교하기 때문에
+		// 조건에 맞지 않으면 실행을 하지 않는다.
+		// 하지만, 만약 최소한 한 번은 꼭 실행을 해야 한다면?
+		
+		do {
+			System.out.println("Hello world");
 			num++;
-		}
+		} while (num <5);
+		
+		// do-while은 조건식이 밑에 존재하여 최소 한 번은
+		// 꼭 실행 할 수 있다!
 	}
 
 }
