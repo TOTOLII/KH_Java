@@ -163,6 +163,10 @@ public class ArrayTest {
 		
 		
 		// 내용 확인하기
+		// arrays.copyof(arr1, arr.length)라는 방법이 있는데
+		// 이는 for문과 똑같아 사용을 권장하지 않음
+		// (우리는 편하게 사용하지만 처리하는 과정에서
+		// for문을 사용하기 때문에 그냥 for문을 사용하는 것이 좋음
 		for (int i = 0; i < copyArr1.length; i++) {
 			System.out.printf("copyArr1[%d] : %d \n", i, copyArr1[i]);
 		}
@@ -193,4 +197,56 @@ public class ArrayTest {
 		System.out.printf("원본 배열 복제 후 : %s \n", originArr);
 		System.out.printf("사본 배열 복제 후 : %s", copyArr3);
 	}
+
+	 public void testArray3() {
+		 
+		 // 배열의 단점 :
+		 // 1. 같은 자료형만 묶을 수 있다.
+		 // 2. 배열은 한 번 크기(길이)를 선언하면 다시는 바꿀 수 없다.
+		 // *  만약 배열을 지정 한  다음에 배열의 크기를 확장하려면, 
+		 //    깊은 복사를 활용하여 큰 배열에 원래 있던 배열을 집어넣는 방법을 사용해야 함.
+		 
+		 int[] arr = new int[5];
+		 
+		 //원래 존재하던 공간만큼은 사용하는데 문제가 없다.
+		 for (int i = 0; i < arr.length; i++) {
+			
+			 arr[i] = i * 10;
+		}
+		// 출력문
+		 for (int i = 0; i < arr.length; i++) {
+			System.out.printf("arr[%d] : %d \n", i,arr[i]);
+		}
+		 // ArrayIndexOutOfBonus :
+		 // 만약 우리가 선언한 배열의 크기보다 더 큰 범위로
+		 // 값을 저장하고자 한다면 발생하는 에러
+		 arr[7] = 500; // --ERROR!!
+		 
+		 // 배열의 순번 중 음수는 없다. 무조건 0부터 시작!
+		 // arr[-1] = 300; ---ERROR!!
+	 } 
+	 
+	 // 자료형 기본값 테스트 전역 변수 (Heap)
+	 boolean booleanChk;
+	 byte byteChk;
+	 short shortChk;
+	 int intChk;
+	 long longChk;
+	 float floatChk;
+	 double doubleChk;
+	 String strChk;
+	 
+	 public void testValue() {
+		 System.out.println("boolean 기본값 : " + booleanChk);
+		 System.out.println("byte 기본값 : " + byteChk);
+		 System.out.println("short 기본값 : " + shortChk);
+		 System.out.println("int 기본값 : " + intChk);
+		 System.out.println("long 기본값 : " + longChk);
+		 System.out.println("float 기본값 : " + floatChk);
+		 System.out.println("double 기본값 : " + doubleChk);
+		 System.out.println("String 기본값 : " + strChk);
+	 }
+	 
+
+
 }
